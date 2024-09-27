@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 4</h1>
+    </header>
+    <main>
+        <h2>Image tag example</h2>
+        <!-- if image is decorative keep the alt attribute empty alt="" -->
+        <img src="images/coffee-shop.jpg" alt="coffee cup with coffee beans" width="500">
+        <img src="images/coffee-shop.jpg" title="coffee cup with coffee beans" width="500">
+        <!-- learning about a tag -->
+        <h2>Link tag example</h2>
+        <p>Here is a link to visit <a href="https://www.google.com" target="_blank">Google Homepage</a>.</p>
+        <p><a href="./thanks.html" target="_blank">Thank you page</a></p>
+
+        <p><a href="#cakes">Jump to cake menu</a></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga ut pariatur minima ab fugiat, sint alias
+            provident quaerat quasi aliquid vel adipisci consectetur maxime minus voluptatem est. Quam, repellendus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores suscipit a tenetur quidem? Et vero
+            possimus sapiente repellat illum illo quisquam magni nostrum, blanditiis iste qui molestias libero, quaerat
+            placeat!</p>
+        <ul id="cakes">
+            <li>Red Velvet</li>
+            <li>Tiramisu</li>
+        </ul>
+        <!-- table in HTML -->
+         <h2>Simple HTML Table</h2>
+         <table border="1">
+            <caption>Student Grades</caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Taylor Baker</td>
+                    <td>Web Dev 1</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>Web Dev 2</td>
+                    <td>A+</td>
+                </tr>
+            </tbody>
+         </table>
+         <table border="1">
+            <caption>Student Grades</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Names</th>
+                    <th colspan="2">Scores</th>
+                </tr>
+                <tr>
+                    <th>Math</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Taylor</td>
+                    <td>5/10</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Lorraine</td>
+                    <td>9/10</td>
+                    <td>10/10</td>
+                </tr>
+            </tbody>
+         </table>
+         <table border="1">
+            <caption>Calander</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Week Day</th>
+                    <th colspan="2">Month</th>
+                </tr>
+                <tr>
+                    <th>Mon</th>
+                    <th>Wed</th>
+                    <th>Jan</th>
+                    <th>May</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+         </table>
+         <table border="1">
+            <caption>Table</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" colspan="2">1</th>
+                    <th colspan="2">2</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                </tr> 
+                <tr>   
+                    <td>g</td>
+                    <td>h</td>
+                    <td>f</td>
+                    <td>e</td>
+                </tr>
+            </tbody>
+         </table>
+         <!-- Form Elements -->
+          <h2>Form Elements</h2>
+          <form action="./thanks.html" method="get">
+            <label for="fullname">Name</label>
+            <input id="fullname" type="text" name="fullname" placeholder="Type Name">
+
+            <label for="useremail">Email</label>
+            <input id="useremail" type="email" name="email" required>
+
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" name="quantity" min="0" max="20">
+
+            <label for="rocks">Choose your Rock</label>
+            <select name="rock" id="rocks">
+                <option value="" selected disabled hidden>Select</option>
+                <option value="citrine">Citrine</option>
+                <option value="selenite">Selenite</option>
+                <option value="jade">Jade</option>
+            </select>
+
+            <!-- Radio Button -->
+             <label for="little">0-1</label>
+             <input type="radio" name="musictime" id="little" value="0-1">
+
+             <label for="some">2-3</label>
+             <input type="radio" name="musictime" id="some" value="2-3">
+
+             <label for="alot">Alot</label>
+             <input type="radio" name="alot" id="alot" value="4-5" checked>
+
+             <label for="alotmore">Alotmore</label>
+             <input type="radio" name="alotmore" id="alotmore" value="6-8">
+
+             <!-- Checkbox -->
+            <h3>What music do you like</h3>
+                <label for="pop">Pop</label>
+                <input type="checkbox" id="pop" name="pop">
+
+                <label for="edm">EDM</label>
+                <input type="checkbox" id="edm" name="edm">
+
+                <label for="hiphop">Hip Hop</label>
+                <input type="checkbox" name="hiphop" id="hiphop">
+            <button type="submit">Send</button>
+          </form>
+
+    </main>
+</body>
+
+</html>
