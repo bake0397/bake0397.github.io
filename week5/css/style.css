@@ -1,0 +1,29 @@
+header {
+    background-color:bisque;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+h1 {
+    color: red;
+    text-shadow: 0 0 3px
+}
+
+h2 {
+    color: blue;
+}
+/* this ia an example comment */
+
+h1, h2, h3 {
+    border: 3px solid greenyellow;
+    font-family: comic sans-serif;
+    text-decoration: underline;
+}
+
+p {
+    font-weight: 600;
+}
+
+div p {
+    font-weight: 200;
+}
