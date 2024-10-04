@@ -1,29 +1,92 @@
 header {
-    background-color:bisque;
+    background-color: #a084fd;
     padding: 1rem;
     margin: 2rem;
     text-align: center;
+    border: none;
+    border-radius: 10px;
 }
 h1 {
-    color: red;
-    text-shadow: 0 0 3px
+    color: #f74807;
 }
 
-h2 {
-    color: blue;
+h2, h3 {
+    color: #5c3bfa;
 }
 /* this ia an example comment */
 
 h1, h2, h3 {
     border: 3px solid greenyellow;
+    border-radius: 10px;
     font-family: comic sans-serif;
     text-decoration: underline;
+    padding: 1rem;
 }
 
 p {
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 div p {
     font-weight: 200;
 }
+
+#test {
+    background-color: #f74807;
+}
+
+/* when targeting a class attribute use . */
+.highlights {
+    background-color: #D8F447;
+}
+
+.goals {
+    color: #2f0fcd;
+}
+
+#explain {
+    border: 5px solid #f74807;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+li:nth-child(odd) {
+    background-color: #5c3bfa;
+}
+
+li:nth-child(even) {
+    background-color: #d8f447;
+}
+
+li:nth-child(3) {
+    background-color: #f74807;
+}
+
+a {
+    font-size: 20px;
+}
+
+a[href="https://algonquincollege.com"] {
+    font-size: 30px;
+}
+
+span {
+    color: red;
+} 
+    /* this rule over rides the rule targeted in the p rule above */
+
+span {
+    color: inherit;
+}
+    /* forces span to inherit the color from the parent (black) */
+
+span {
+    color: initial;
+}
+/* value "initial" resets to browser default */
+
+span {
+    color: unset;
+}
+/* value "unset" ignores any previous rules set and resets the property to its inherited value*/
