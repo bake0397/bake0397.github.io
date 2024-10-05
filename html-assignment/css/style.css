@@ -35,17 +35,6 @@ header, footer {
     background-color: #A084FD;
 }
 
-a {
-    color: #5C3BFA
-}
-
-a:hover {
-    color: #D8F447;
-}
-
-a:visited {
-    color: #5C3BFA;
-}
 
 footer {
     color: #D8F447;
