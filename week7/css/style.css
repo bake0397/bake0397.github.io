@@ -1,0 +1,52 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #a3efe3;
+    border: 5px solid #FF6A41;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    /* makes content smaller aka content box actual size bc it includes the margins whereas default doesnt */
+}
+
+main {
+    width: 350px;
+}
+
+/* p {
+    width: 200px;
+    
+} */
+
+a {
+    visibility: hidden; 
+    width: 300px;
+}
+/* display none deviates from any rules previously set, makes tag not visible as if it didnt exist, doesnt take any space */
+/* visibility: hidden space is taken of where that element would be but it is not visible*/
+
+/* display:inline-block width and height will apply, any othe rdisplay rule you cannot use width and height */
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+img{
+    width: 200px;
+    float: right;
+    padding: 1rem
+}
+
+.one {
+    float: right;
+
+}
+
+.two {
+
+}
+
+.three{
+
+}
