@@ -1,6 +1,11 @@
 html {
+    font-size: 20px;
+}
+
+body {
     background-color: #aad4cf;
 }
+
 
 .container {
     background-image: url("../images/lone-starfish-wide.jpg");
@@ -8,13 +13,14 @@ html {
     width: 80vw;
     height: 40vh;
     margin: 0 auto;
+    /* left and right margin only or 0 auto */
     justify-content: center;
     background-position: center center;
 }
 
 .overlay-text h1 {
     color: white;
-    padding: 8rem;
+    padding: 8rem 0;
     text-align: center;
     font-size: 3rem;
     margin: 0 auto;
@@ -40,6 +46,7 @@ fieldset {
 textarea {
     height: 3rem;
 }
+
 
 input:nth-of-type(radio) {
     display: block;
@@ -92,22 +99,54 @@ footer {
 }  */
 
 /* nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding-top: 1rem;
     display: inline-flex;
     text-align: center;
 } */
 
-/* nav ul li {
-    margin: 0 60px 10px 60px;
-    position: relative;
+/* li {
+    margin: 0 50 0 50;
+} */
+
+ul {
+    /* margin-right: 30%; */
+    padding-inline-start: 0%;
+    
+}
+
+
+nav ul li {
+    /* list-style: none; */
+    display: inline;
+    /* margin: 0 60px 10px 60px; */
+    /* position: relative; */
     text-transform: uppercase;
     font-size: 1.2rem;
     color: #404441;
-    flex: content;
-    justify-content: center;
-} */
+    margin: 0 auto;
+    /* flex: content; */
+    /* justify-content: center; */
+    
+}
+
+nav li {
+    list-style: none;
+    border-right: 1px solid #404441;
+    padding: 20px;
+    /* position: relative; */
+    /* left: 250px; */
+    /* display: inline-flex; */
+    text-align: center;
+    /* justify-content: center; */
+    /* margin: 10px; */
+}
+
+nav li:last-child {
+    border-right: none;
+    position: relative;
+}
 
 /* nav ul li:not(:last-child)::after {
     content: "";
