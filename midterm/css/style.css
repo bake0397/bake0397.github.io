@@ -1,14 +1,15 @@
-html {
+html, body{
     margin: o;
     padding: 0;
     height: 100%;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 main {
-    width: 82vw;
-    max-width: 1200vw;
+    width: 100%;
+    max-width: 1200px;
     min-width: 400px;
     margin: 0 auto;
 }
@@ -23,10 +24,9 @@ body {
     background-image: url("../images/lone-starfish-wide.jpg");
     background-size: auto;
     background-repeat: no-repeat;
-    width: 100vw;
-    max-width: 1200vw;
-    min-width: 20vw;
-    height: 40vh;
+    width: 100%;
+    max-width: 1040px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,96 +34,96 @@ body {
     margin: 0 auto;
 }
 
-/* .overlay-text {
-    text-align: center;
-    width: 100%;
-} */
-
 .overlay-text h1 {
     color: white;
     padding-top: 9rem;
+    padding-bottom: 5rem;
     text-align: center;
     display: flex;
-    font-size: 6vw;
+    font-size: 3rem;
     margin: 0 auto;
     flex-grow: 1;
-    /* position: relative; */
 }
 
 .body-container {
     background-color: #D4E9E7;
     background-position: center center;
-    width: 82vw;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1025px;
     min-width: 400px;
     margin: 0 auto;
-    padding-bottom: 2rem;
-    /* padding-top: none; */
+    padding-bottom: 1rem;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: normal;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-grow: 1;
     list-style: none;
 }
 
-.navigation li {
+.navigation li a{
     text-transform: uppercase;
+    justify-content: space-around;
     text-align: center;
     line-height: 2rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #404441;
-    margin: 0 2rem;
-    padding: 0.1rem;
+    margin: 0;
+    padding: 6rem;
     flex-grow: 1;
+    
 }
 
-.navigation li:nth-child(2) {
+.navigation li:nth-child(2){
     border-left: 1px solid #404441;
     border-right: 1px solid #404441;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    margin: 0;
 }
 
+a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
 
 h2 {
-    font-size: 1.4rem;
-    margin-left: 0.2em;
+    font-size: 1.75rem;
+    margin-left: 0.7rem;
     padding-top: 2rem;
     font-weight: 300;
 }
 
 img {
-    width: 200px;
-    height: 204px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 250px;
+    height: 257px;
+    padding-top: 0.2rem;
+    padding-right: 0.7rem;
+    padding-bottom: 0.3rem;
     float: inline-start;
-    margin-left: -1rem;
+    margin-left: 0.7em;
 }
 
-.story {
+
+p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
-    padding: 0.5em; 
+    line-height: 1rem;
+    padding-top: 0.4rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
 }
 
 h3 {
     font-size: 1.3rem;
-    padding-top: 1rem;
+    padding-top: 0;
     padding-bottom: 1rem;
     margin-left: 0.5em
 }
@@ -131,12 +131,11 @@ h3 {
 .facts li {
     font-size: 0.8rem;
     list-style: disc;
-    margin-left: 1.2rem;
+    margin-left: 1.4rem;
 }
 
 h4 {
     font-size: 1.3rem;
-    padding-top: 1.2rem;
     padding-bottom: 0.2em;
     margin-left: 0.5em
 }
@@ -149,6 +148,7 @@ form {
 fieldset {
     border: 1px solid black;
     margin: 0.5rem 1rem 1rem 0.7rem;
+    display: grid;
 }
 
 #name , #email , #message {
@@ -173,10 +173,13 @@ label {
     font-weight: 500;
 }
 
+input:hover, textarea:hover {
+    border: 4px solid #40978d;
+}
+
 input:nth-of-type(radio) {
     display: block;
 }  
-
 
 button {
     display: block;
@@ -188,13 +191,21 @@ button {
     font-size: 0.5rem;
 }
 
+button:hover {
+    font-weight: 400;
+    text-decoration: underline;
+    border: 2px solid black;
+    background-color: #aad4cf;
+    position: initial;
+}
+
 
 footer {
     font-size: 0.7rem;
     text-align: right;
     background-color: #D4E9E7;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1025px;
     min-width: 400px;
     margin: 0 auto;
 }
@@ -258,8 +269,32 @@ h6 {
     justify-content: center;
 } */
 
+/* .navigation li:nth-child(2) {
+    border-left: 1px solid #404441;
+    border-right: 1px solid #404441;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin: 0 ;
+} */
+
+/* .navigation li:nth-child(1) {
+    padding-left: 2rem;
+    padding-right: 3.5rem;
+}
 
 
+
+.navigation li:nth-child(3) {
+    padding-left: 3.5rem;
+    padding-right: 3.2rem;
+} */
+
+
+/* .navigation li:nth-child(odd){
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0;
+} */
 
 
 /* .navigation ul li {
