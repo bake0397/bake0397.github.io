@@ -138,6 +138,7 @@ fieldset {
 
 textarea {
     height: 4rem;
+    resize: none;
 }
 
 h5 {
