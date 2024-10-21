@@ -181,6 +181,28 @@ footer {
     padding: 0.5rem;
 }
 
+.thanks-container {
+    background-color: #D4E9E7;
+    width: 80vw;;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+h6 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #404441;
+    margin: 50px 88px 100px 88px;
+    text-align: center;
+    padding-top: 5rem;
+    text-transform: uppercase;
+}
+
+.thanks-footer {
+    margin-top: 22rem;
+}
+
+
 /* .navigation li:first-child {
     padding-left: rem;
 }
