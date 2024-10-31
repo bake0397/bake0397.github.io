@@ -1,25 +1,24 @@
 html, body{
-    margin: o;
-    padding: 0;
-    height: 100%;
-    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* layout */
 main {
-    width: 100%;
-    max-width: 1200px;
-    min-width: 400px;
     margin: 0 auto;
+    max-width: 1200px;
+    min-width: 400px; 
+    width: 100%;
 }
 
 body {
     background-color: #aad4cf;
     padding-bottom: 2rem;
 }
-
 
 .container {
     background-image: url("../images/lone-starfish-wide.jpg");
@@ -38,13 +37,13 @@ body {
 /* typography */
 .overlay-text h1 {
     color: white;
-    padding-top: 9rem;
-    padding-bottom: 5rem;
+    font-size: 3rem;
     text-align: center;
     display: flex;
-    font-size: 3rem;
-    margin: 0 auto;
     flex-grow: 1;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    margin: 0 auto;
 }
 
 /* Body layout structure */
@@ -61,30 +60,29 @@ body {
 
 /* Navigation layout and typography */
 nav a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
     letter-spacing: normal;
 }
 
 
 .navigation {
     display: flex;
+    list-style: none;
     justify-content: space-evenly;
     flex-grow: 1;
-    list-style: none;
 }
 
 .navigation li a{
+    color: #404441;
+    font-size: 1.3rem;
     text-transform: uppercase;
     justify-content: space-around;
     text-align: center;
     line-height: 2rem;
-    font-size: 1.3rem;
-    color: #404441;
     margin: 0;
     padding: 6rem;
     flex-grow: 1;
-    
 }
 
 /* used to create the borders framing the middle nav item */
@@ -103,19 +101,19 @@ a:hover {
 /* Typography */
 h2 {
     font-size: 1.75rem;
-    margin-left: 0.7rem;
-    padding-top: 2rem;
     font-weight: 300;
+    margin-left: 0.7rem;
+    padding-top: 2rem;   
 }
 
 /* Layout */
 img {
+    float: inline-start;
     width: 250px;
     height: 257px;
     padding-top: 0.2rem;
     padding-right: 0.7rem;
     padding-bottom: 0.3rem;
-    float: inline-start;
     margin-left: 0.7em;
 }
 
@@ -156,13 +154,12 @@ form {
 fieldset {
     border: 1px solid black;
     margin: 0.5rem 1rem 1rem 0.7rem;
-    display: grid;
 }
 
 #name , #email , #message {
     display: block;
-    margin: 0.5rem 0;
     width: 100%;
+    margin: 0.5rem 0;
 }
 
 /* textarea resize:none to prevent infinite textarea box resizing from the user */
@@ -194,28 +191,28 @@ input:nth-of-type(radio) {
 }  
 
 button {
+    background-color: #D4E9E7;
+    font-size: 0.5rem;
+    border: 1px solid black;
+    text-transform: uppercase;
     display: block;
     margin-top: 1rem;
-    text-transform: uppercase;
-    background-color: #D4E9E7;
-    border: 1px solid black;
-    padding: 0.5rem;
-    font-size: 0.5rem;
+    padding: 0.5rem;   
 }
 
 button:hover {
+    background-color: #aad4cf;
     font-weight: 400;
     text-decoration: underline;
     border: 2px solid black;
-    background-color: #aad4cf;
     position: initial;
 }
 
 /* Copyright Information typography and layout */
 footer {
+    background-color: #D4E9E7;
     font-size: 0.7rem;
     text-align: right;
-    background-color: #D4E9E7;
     width: 100%;
     max-width: 1025px;
     min-width: 400px;
@@ -236,13 +233,13 @@ footer {
 
 /* Typography */
 h6 {
+    color: #404441;
     font-size: 4rem;
     font-weight: 600;
-    color: #404441;
-    margin: 50px 88px 100px 88px;
-    text-align: center;
-    padding-top: 5rem;
     text-transform: uppercase;
+    text-align: center;
+    margin: 50px 88px 100px 88px;
+    padding-top: 5rem;
 }
 
 .thanks-footer {
