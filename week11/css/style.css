@@ -1,7 +1,5 @@
-/* Global Styles are written first in CSS (anything thats going to be inherited: font family, font size, box sizing(calc that includes padding dimensions)/border box*/
-
-/* Global Styles */
-html {
+/* Global styles */
+html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     box-sizing: border-box;
@@ -9,77 +7,124 @@ html {
 
 *,
 *:after,
-*:before {
+*:before{
     box-sizing: inherit;
 }
-
-body {
+body{
     line-height: 1.5;
 }
-
 /* add clearfix if using */
-
-img {
+img{
     width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5{
     font-weight: bold;
-    margin: 0.5rem 0 0.2rem;
+    margin: 0.5em 0 0.2em;
 }
 
-h1 {
+h1{
     font-size: 5.063em;
 }
 
-h2 {
+h2{
     font-size: 3.375em;
 }
 
-h3 {
+h3{
     font-size: 2.25em;
 }
-
-h4 {
+h4{
     font-size: 1.5em;
 }
 
-p {
+p{
     margin: 1em 0;
 }
 
-.container {
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1em;
 }
-
-/* Header Styles */
-header {
+/* header styles */
+header{
     background-color: rgb(216, 212, 212);
-    padding: 2em 0;
+    padding: 2em;
+    width: 100%;
 }
 
-/* Card Styles */
-.card {
-    border: 2px solid #00ADD8;
+nav ul  {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: rgb(34, 32, 32);
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    color: rgb(212, 216, 219);
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+}
+
+nav a:hover, 
+nav a:focus {
+    background-color: rgb(41, 81, 68);
+}
+
+/* card styles */
+.card{
+    border: 2px solid #00add8;
     border-radius: 6px;
     margin-bottom: 1em;
 }
 
-.card .info {
+.card .info{
     padding: 1em;
 }
 
-.card h3 {
+.card h3{
     margin-top: 0;
 }
 
-/* News Section */
+/* news section */
 
-.news {
-    border-top: 2px solid #00ADD8;
+.news{
+    border-top: 2px solid #00add8;
     margin-top: 4em;
+}
+
+/* demo for felx basis and flex-grow */
+.flextest div{
+    background-color: #00add8;
+    padding: 2rem;
+    margin: 1rem;
+    width: 100%; 
+    /* flex-grow: 1; */
+}
+
+.flextest{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+.flex1{
+    flex-basis: 100%;
+}
+
+.flex2 {
+    flex-grow: 1;
 }
 
 /* Desktop Styles */
@@ -87,6 +132,11 @@ header {
 @media screen and (min-width: 800px){
     html {
         font-size: 16px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
     }
 
     .cards {
