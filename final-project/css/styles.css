@@ -51,6 +51,8 @@ header {
     background-color: #bd8515;
 }
 
+/* Navigation Styles */
+
 nav ul  {
     list-style: none;
     text-align: center;
@@ -100,6 +102,8 @@ nav a:focus {
     display: flex;
 }
 
+/* Header Background/Overlay Styles */
+
 #bannerimage {
     display: flex;
     background-image: url(../images/main-banner.jpg);
@@ -133,6 +137,8 @@ nav a:focus {
     padding: 10px auto 10px auto;
 }
 
+/* Button/Link 1 Styles */
+
 a {
     text-decoration: none;
 }
@@ -163,6 +169,8 @@ a {
     padding-left: 5px;
 }
 
+/* About Section Styles */
+
 #image1 {
     display: flex;
     width: 370px;
@@ -186,6 +194,7 @@ a {
     background-color: white;
 }
 
+/* Image Styles */
 #image2 , #image3 , #image4 , #image5 , #image6 , #john , #bob {
     width: 380px;
 }
@@ -236,8 +245,80 @@ a {
     border: 1px solid #bd8515;
 }
 
-/* Footer */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+form label {
+    padding: 7px 0;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+button {
+    width: 52px;
+    border: none;
+    background-color: #162033;
+    color: #bd8515;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* Table Styles */
+
+table {
+    border-collapse: separate;
+    width: 380px;
+    margin: 0 auto;
+}
+
+td {
+    border: 0.5px solid #222222;
+    font-size: 0.6rem;
+    text-align: left;
+    padding: 10px;
+
+}
+
+th {
+    background-color: #fbe7b3;
+    font-size: 0.6rem;
+    border: 0.5px solid #222222;   /* Add cell borders */
+    text-align: center;
+    padding: 10px;  
+}
+
+
+#map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles*/
 footer {
+    display: block;
     background-color: #222222;
     color: #bd8515;
 }
+
+.copyright3 {
+    display: flex;
+    text-decoration: none;
+    color: #bd8515;
+}
+
+a .copyright3 {
+    display: inline-flex;
+}
+
