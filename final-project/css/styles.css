@@ -7,8 +7,11 @@ html{
 }
 
 h1{
-    font-size: 5.063em;
+    font-size: 2.8rem;
     color: white;
+    font-weight: 600;
+    padding-left: 10px;
+    line-height: 1.3;
 }
 
 h2{
@@ -28,51 +31,121 @@ header {
     height: 100%;
 }
 
+.logo img:hover {
+    background-color: #bd8515;
+}
+
 nav ul  {
     list-style: none;
-    width: 100%;
-    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    color: #AD8330;
+    color: #bd8515;
+    padding: 1rem;
 }
 
 nav a,
 nav a:link,
 nav a:visited {
-    color: #AD8330;
+    display: flex;
+    justify-content: space-evenly;
+    color: #bd8515;
     display: block;
     text-decoration: none;
+    width: 100px;
+    padding: 5px;
+    margin: 0 auto;
 }
 
 nav a:hover, 
 nav a:focus {
-    background-color: #AD8330;
+    background-color: #bd8515;
     color: #222222;
 }
 
+#searchbar {
+    display: flex;
+    justify-self: center;
+    width: 85%;
+    margin: 10px 0 10px 10px;
+}
+
+#icon1 {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.search {
+    display: flex;
+}
+
 #bannerimage {
+    display: flex;
     background-image: url(../images/main-banner.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     width: 390px;
-    height: 100%;
-    /* height: 800px; */
+    height: 293px;
+}
+
+.content {
+    display: block;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .welcome {
     color: white;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 6px;
+    padding-bottom: 5px;
+}
+
+.overlay {
+    display: flex;
+    background-color: rgb(34, 34, 34, 0.7);
+    height: fit-content;
+    margin: 30px 0;
+    padding: 10px auto 10px auto;
 }
 
 a {
     text-decoration: none;
 }
 
+.box1 {
+    background-color: #bd8515;
+    padding: 25px;
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
 .link1 {
+    display: inline-block;
     color: #222222;
-    background-color: #AD8330;
+    
+    /* background-color: #bd8515;
+    padding: 20px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 2px; */
+    /* justify-content: space-around; */
+}
+
+
+#icon2 {
+    /* display: inline-block; */
+    align-self: flex-end;
+    padding-left: 5px;
 }
 
 .link2 {
@@ -83,5 +156,5 @@ a {
 .link3 {
     color: white;
     background-color: #162033;
-    border: 1px solid #AD8330;
+    border: 1px solid #bd8515;
 }
