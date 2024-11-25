@@ -2,8 +2,18 @@
 html{
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    width: 390px;
-    margin: 0 auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    max-width: 390px;
+} */
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
 }
 
 /* Heading Styles */
@@ -47,8 +57,8 @@ h5 {
 /* Header Styles */
 
 header {
-    background-color: #222222;
-    height: 100%;
+    background-color: #222222; 
+    width: 100%;
 }
 
 .logo img:hover {
@@ -75,7 +85,7 @@ nav a:visited {
     color: #c78c06;
     display: block;
     text-decoration: none;
-    width: 100px;
+    /* width: 100%; */
     padding: 5px;
     margin: 0 auto;
 }
@@ -87,35 +97,39 @@ nav a:focus {
 }
 
 #searchbar {
-    display: flex;
+    display: inline;
     justify-self: center;
-    width: 85%;
-    margin: 10px 0 10px 10px;
+    width: 80%;
+    height: 35px;
+    
 }
 
 #icon1 {
-    display: flex;
-    width: 10%;
-    height: 10%;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+    display: inline;
+    width: 35px;
+    height: 35px;
+    align-content: flex-end;
+    /* margin-bottom: 10px; */
     margin-top: 10px;
 }
 
 .search {
-    display: flex;
+    display: inline;
 }
 
 /* Header Background/Overlay Styles */
 
 #banner1 {
-    display: flex;
+    /* display: flex; */
+    /* position: relative; */
     background-image: url(../images/main-banner.jpg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    /* background-position: center; */
-    width: 390px;
-    height: 293px;
+    background-position-x: 100%;
+    /* width: 100%;
+    height: 100%; */
+    background-position: center;
+    /* height: 293px; */
 }
 
 .content {
@@ -150,7 +164,7 @@ a {
 .box1 {
     background-color: #c78c06;
     padding: 25px;
-    width: 120px;
+    width: 32%;
     margin-left: 10px;
     margin-top: 2px;
 }
@@ -172,11 +186,10 @@ a {
     font-weight: 600;
 }
 
-
-
 #image1 {
     display: flex;
-    width: 370px;
+    position: absolute;
+    width: 100%;
     justify-content: space-around;
     padding: 10px 10px 0 10px;
 }
@@ -205,18 +218,25 @@ a {
 
 .container2 {
     background-color: white;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 /* Image Styles */
 #image2 , #image3 , #image4 , #image5 , #image6 , #john , #bob {
-    width: 380px;
+    width: 100%; 
+    
 }
 
 .card1 , .card2 , .card3 , .card4 , .card5 , .card6 , .card7 {
     background-color: #ffe6ac;
-    margin: 5px;
+    /* margin: 5px; */
     padding-bottom: 10px;
     margin-top: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    width: 100%;
+
 }
 
 /* Our Services Styles */
@@ -233,7 +253,7 @@ a {
 .box2 {
     background-color: #222222;
     padding: 20px;
-    width: 110px; 
+    width: 27%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -256,7 +276,7 @@ a {
 .box3 {
     background-color: #222222;
     padding: 20px;
-    width: 130px; 
+    width: 32%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -277,7 +297,7 @@ a {
 .box4 {
     background-color: #222222;
     padding: 20px;
-    width: 100px; 
+    width: 27%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -298,7 +318,7 @@ a {
 .box5 {
     background-color: #222222;
     padding: 20px;
-    width: 100px; 
+    width: 25%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -319,7 +339,7 @@ a {
 .box6 {
     background-color: #222222;
     padding: 20px;
-    width: 100px; 
+    width: 25%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -344,9 +364,11 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 390px;
-    height: 170px;
+    width: 100%;
+    /* height: 170px; */
     margin: 15px 0 15px 0;
+    padding-bottom: 10px;
+
 }
 
 .vision h3 {
@@ -363,8 +385,8 @@ a {
 .box7 {
     background-color: rgba(22, 32, 51, 0.8);
     border: 1px solid #c78c06;
-    padding: 20px;
-    width: 100px; 
+    padding: 15px;
+    width: 27%; 
     margin-left: 10px;
     margin-top: 2px; 
 }
@@ -378,7 +400,7 @@ a {
     display: inline;
     width: 12px;
     height: 12px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* Our Team Styles */
@@ -391,9 +413,17 @@ a {
     font-weight: 350;
 }
 
+.john {
+    width: 100%;
+}
+
+.bob {
+    width: 100%;
+}
+
 hr {
     border: 0.5px solid #c78c06;
-    width: 360px;
+    width: 95%;
 }
 
 /* Contact Styles */
@@ -407,7 +437,12 @@ hr {
 form {
     display: flex;
     flex-direction: column;
-    margin: 0 5px;
+    margin: 0 auto;
+    width: 97%;
+}
+
+#name #email {
+    width: 97%;
 }
 
 form label {
@@ -417,6 +452,7 @@ form label {
 textarea {
     height: 90px;
     resize: none;
+    width: 97%;
 }
 
 button {
@@ -435,7 +471,7 @@ button {
 
 table {
     border-collapse: separate;
-    width: 380px;
+    width: 96%;
     margin: 0 auto;
     border: 0.5px solid #222222;
 }
@@ -462,6 +498,7 @@ th {
     justify-content: center;
     margin-bottom: 10px;
 }
+
 
 /* Footer Styles*/
 footer {
@@ -497,3 +534,249 @@ a .copyright3 {
     margin-left: 15px;
 }
 
+/* Desktop Styles */
+
+@media screen and (min-width: 760px) {
+    body {
+        width: 1200px;
+        margin: 0 auto
+    }
+
+    header {
+        background-color: #222222;
+        width: 100%;
+        height: 100px;
+        display: flex;
+
+    }
+    
+  
+    
+    /* Navigation Desktop Styles */
+    nav ul  {
+        list-style: none;
+        /* text-align: center; */
+    }
+    
+    nav ul li {
+        color: #c78c06;
+        padding: 1rem;
+        display: inline;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        display: inline;
+        justify-content: space-evenly;
+        color: #c78c06;
+        text-decoration: none;
+        width: 100px;
+        padding: 5px;
+    }
+    
+    nav a:hover, 
+    nav a:focus {
+        background-color: #c78c06;
+        color: #222222;
+    }
+    
+    #searchbar {
+        display: flex;
+        justify-self: center;
+        width: 85%;
+        margin: 10px 0 10px 10px;
+    }
+    
+    #icon1 {
+        display: flex;
+        width: 10%;
+        height: 10%;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .search {
+        display: flex;
+    }
+   
+    
+    /* Header Background/Overlay Styles */
+    #banner1 {
+        display: flex;
+        background-image: url(../images/main-banner.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        width: 100%;
+        height: 293px;
+    }
+    
+    .content {
+        display: block;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .welcome {
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 6px;
+        padding-bottom: 5px;
+    }
+    
+    .overlay {
+        display: flex;
+        background-color: rgb(34, 34, 34, 0.7);
+        height: fit-content;
+        margin: 30px 0;
+        padding: 10px auto 10px auto;
+    }
+    
+    
+    /* Connect Link Styles */
+    
+   
+    
+    
+    /* About Section Styles */
+    
+    
+    
+    /* Image Styles */
+    #image2 , #image3 , #image4 , #image5 , #image6 , #john , #bob {
+        min-width: 100%; 
+        
+    }
+    
+    /* Digital Plans Link Styles */
+    
+    
+    
+    /* Marketing Plans Link Styles */
+    
+    
+    
+    /* Video Plans Link Styles */
+    
+    
+    /* Web Plans Link Styles */
+    
+    
+    
+    /* Print Plans Link Styles */
+    
+    
+    /* Vision Image + Link Styles */
+    #banner2 {
+        display: flex;
+        background-image: url(../images/vision.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 170px;
+        margin: 15px 0 15px 0;
+    }
+   
+    
+    /* Our Team Styles */
+    .team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .john {
+        grid-column-start: 2;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 1;
+
+    }
+
+    .card6 {
+        grid-column: 2;
+        grid-row: span 2;
+    }
+
+    .bob {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card7 {
+        grid-column: 1;
+        grid-row: 2/ span 2 ;
+    }
+
+    /* .card1 , .card2 , .card3 , .card4 , .card5 , .card6 , .card7 {
+        background-color: #ffe6ac;
+        margin: 5px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    } */
+    /* #ourteam p {
+        font-size: 0.6rem;
+        line-height: 1.3;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-weight: 350;
+    } */
+    
+    hr {
+        border: 0.5px solid #c78c06;
+        width: 95%;
+    }
+    
+    /* Contact Styles */
+    
+   
+    
+    /* Form Styles */
+    
+    
+    
+    
+    /* Table Styles */
+    
+   
+    
+    /* Footer Styles*/
+    footer {
+        display: block;
+        background-color: #222222;
+        color: #c78c06;
+    }
+    
+    .copyright3 {
+        display: inline;
+        text-decoration: none;
+        color: #c78c06;
+    }
+    
+    a .copyright3 {
+        display: inline-block;
+        font-size: 0.8rem;
+        padding-top: 15px;
+        padding-bottom: 18px;
+        margin-left: 15px;
+    }
+    
+    .copyright1 {
+        font-size: 0.8rem;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+    
+    .copyright2 {
+        font-size: 0.8rem;
+        padding-top: 15px;
+        padding-bottom: 18px;
+        margin-left: 15px;
+    }
+    
+}
