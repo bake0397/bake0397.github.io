@@ -18,26 +18,30 @@ h1{
 
 h2{
     font-size: 2rem;
-    font-weight: 600;
-    padding: 10px 0 ;
+    font-weight: 800;
+    padding: 10px 6px ;
 }
 
 h3{
-    font-size: 1.3rem;
-    padding: 8px 5px;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 6px;
     font-weight: 700;
 }
 
 h4{
     font-size: 1.3rem;
-    padding-left: 10px 0;
+    padding-left: 10px;
+    padding-top: 12px;
     font-weight: 600;
 }
 
 h5 {
-    font-size: 1rem;
-    padding-left: 10px 0;
-    font-weight: 600;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    padding-top: 4px;
+    font-weight: 550;
 }
 
 /* Header Styles */
@@ -104,7 +108,7 @@ nav a:focus {
 
 /* Header Background/Overlay Styles */
 
-#bannerimage {
+#banner1 {
     display: flex;
     background-image: url(../images/main-banner.jpg);
     background-size: contain;
@@ -171,23 +175,39 @@ a {
 
 /* About Section Styles */
 
+#about h2 {
+    font-weight: 600;
+}
+
+
+
 #image1 {
     display: flex;
     width: 370px;
     justify-content: space-around;
+    padding: 10px 10px 0 10px;
 }
 
 #about {
     display: flex;
     background-color: #fbe7b3;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #about1 , #about2 {
     font-size: 0.6rem;
     line-height: 1.3;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     font-weight: 300;
+    margin: 0 10px;
+}
+
+#about1 {
+    padding-bottom: 7px;
+}
+
+#about2 {
+    padding-bottom: 12px;
 }
 
 .container2 {
@@ -202,50 +222,161 @@ a {
 .card1 , .card2 , .card3 , .card4 , .card5 , .card6 , .card7 {
     background-color: #fbe7b3;
     margin: 5px;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
+
+/* Our Services Styles */
+
+
 
 .ser {
     font-size: 0.6rem;
     line-height: 1.3;
-    padding: 5px 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-weight: 350;
 }
 
+/* Digital Plans Link Styles */
 .box2 {
     background-color: #222222;
-    padding: 25px;
-    width: 120px; 
+    padding: 20px;
+    width: 100px; 
     margin-left: 10px;
     margin-top: 2px; 
 }
 
 .link2 {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
+    display: inline-block;
     color: white;
-    background-color: #222222;
-    padding: 10px;
 }
 
 #icon3 {
-    display: flex;
-    align-self: flex-end;
+    display: inline;
     width: 12px;
     height: 12px;
-    /* margin-bottom: 10px;
-    margin-top: 10px; */
+    margin-left: 5px;
 }
 
 
+/* Marketing Plans Link Styles */
+
+.box3 {
+    background-color: #222222;
+    padding: 20px;
+    width: 120px; 
+    margin-left: 10px;
+    margin-top: 2px; 
+}
 
 .link3 {
+    display: inline-block;
     color: white;
-    background-color: #162033;
-    border: 1px solid #bd8515;
 }
 
+/* Video Plans Link Styles */
+.box4 {
+    background-color: #222222;
+    padding: 20px;
+    width: 95px; 
+    margin-left: 10px;
+    margin-top: 2px; 
+}
 
+.link4 {
+    display: inline-block;
+    color: white;
+}
+
+/* Web Plans Link Styles */
+.box5 {
+    background-color: #222222;
+    padding: 20px;
+    width: 85px; 
+    margin-left: 10px;
+    margin-top: 2px; 
+}
+
+.link5 {
+    display: inline-block;
+    color: white;
+}
+
+/* Print Plans Link Styles */
+.box6 {
+    background-color: #222222;
+    padding: 20px;
+    width: 90px; 
+    margin-left: 10px;
+    margin-top: 2px; 
+}
+
+.link6 {
+    display: inline-block;
+    color: white;
+}
+
+/* Vision Image + Link Styles */
+
+#banner2 {
+    display: flex;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 390px;
+    height: 170px;
+    margin: 15px 0 15px 0;
+}
+
+.vision h3 {
+    color: white;
+}
+
+.vcontent {
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    padding: 8px 8px 10px 10px;
+}
+
+.box7 {
+    background-color: rgba(22, 32, 51, 0.8);
+    border: 1px solid #bd8515;
+    padding: 20px;
+    width: 95px; 
+    margin-left: 10px;
+    margin-top: 2px; 
+}
+
+.link7 {
+    display: inline-block;
+    color: white;
+}
+
+/* Our Team Styles */
+
+#ourteam p {
+    font-size: 0.6rem;
+    line-height: 1.3;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-weight: 350;
+}
+
+hr {
+    border: 0.5px solid #bd8515;
+    width: 360px;
+}
+
+/* Contact Styles */
+
+#contact {
+    margin-top: 40px;
+}
+
+/* Form Styles */
 
 form {
     display: flex;
@@ -280,11 +411,12 @@ table {
     border-collapse: separate;
     width: 380px;
     margin: 0 auto;
+    border: 0.5px solid #222222;
 }
 
 td {
     border: 0.5px solid #222222;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     text-align: left;
     padding: 10px;
 
@@ -292,7 +424,7 @@ td {
 
 th {
     background-color: #fbe7b3;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     border: 0.5px solid #222222;   /* Add cell borders */
     text-align: center;
     padding: 10px;  
@@ -302,7 +434,7 @@ th {
 #map {
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Footer Styles*/
@@ -313,12 +445,29 @@ footer {
 }
 
 .copyright3 {
-    display: flex;
+    display: inline;
     text-decoration: none;
     color: #bd8515;
 }
 
 a .copyright3 {
-    display: inline-flex;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    margin-left: 15px;
+}
+
+.copyright1 {
+    font-size: 0.8rem;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.copyright2 {
+    font-size: 0.8rem;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    margin-left: 15px;
 }
 
