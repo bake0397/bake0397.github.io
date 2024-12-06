@@ -61,6 +61,11 @@ header {
     width: 100%;
 }
 
+.logo img{
+    height: 30%;
+    width: 30%;
+}
+
 .logo img:hover {
     background-color: #c78c06;
 }
@@ -96,47 +101,61 @@ nav a:focus {
     color: #222222;
 }
 
+
+.search {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    /* height: auto; */
+}
+
 #searchbar {
     display: inline;
-    justify-self: center;
-    width: 80%;
+    /* justify-self: center; */
+    width: 85%;
     height: 35px;
-    
+    margin-left: 3%;
 }
 
 #icon1 {
-    display: inline;
+    display: inline-flex;
     width: 35px;
     height: 35px;
     align-content: flex-end;
-    /* margin-bottom: 10px; */
-    margin-top: 10px;
+    /* margin-right: 10%; */
+    /* margin-right: 2%; */
+    /* margin-bottom: 10px; 
+    /* margin-top: 10px;  */
 }
 
-.search {
-    display: inline;
-}
+/* .search {
+    display: flex; 
+    margin: 0 auto;
+} */
 
 /* Header Background/Overlay Styles */
 
 #banner1 {
-    /* display: flex; */
-    /* position: relative; */
+    display: flex;
     background-image: url(../images/main-banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 100%;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%; 
     background-position: center;
-    /* height: 293px; */
 }
 
-.content {
+/* #banner1  , img {
+    width: 100%;
+    z-index: -1;
+} */
+
+/* .content {
     display: block;
     padding-bottom: 10px;
     margin-top: 10px;
-}
+} */
 
 .welcome {
     color: white;
@@ -148,11 +167,13 @@ nav a:focus {
 }
 
 .overlay {
-    display: flex;
     background-color: rgb(34, 34, 34, 0.7);
-    height: fit-content;
-    margin: 30px 0;
-    padding: 10px auto 10px auto;
+    display: block;
+    padding: 5%;
+    margin: 10% 0;
+    /* height: fit-content; */
+    /* margin: 30px 0; */
+    /* padding: 10px auto 10px auto; */
 }
 
 /* Connect Link Styles */
@@ -164,14 +185,19 @@ a {
 .box1 {
     background-color: #c78c06;
     padding: 25px;
-    width: 32%;
-    margin-left: 10px;
-    margin-top: 2px;
+    width: 185px;
+    margin: 0 12px;
+    display: flex;
+    position: relative;
+    /* margin:  2px 270px 2px 12px; */
+    /* margin-top: 2px; */
+
 }
 
 .link1 {
     display: inline-block;
     color: #222222;
+    width: 80%;
 }
 
 #icon2 {
@@ -182,23 +208,29 @@ a {
 
 /* About Section Styles */
 
+.container1 {
+    /* display: flex; */
+    background-color: #ffe6ac;
+    margin-top: 0;
+}
+
 #about h2 {
     font-weight: 600;
 }
 
 #image1 {
-    display: flex;
-    position: absolute;
+    /* display: flex; */
+    /* position: absolute; */
     width: 100%;
     justify-content: space-around;
     padding: 10px 10px 0 10px;
 }
 
-#about {
+/* #about {
     display: flex;
     background-color: #ffe6ac;
-    /* padding: 10px; */
-}
+    padding: 10px;
+} */
 
 #about1 , #about2 {
     font-size: 0.6rem;
@@ -235,7 +267,7 @@ a {
     margin-top: 10px;
     /* margin-left: 10px;
     margin-right: 10px; */
-    width: 100%;
+    /* width: 100%; */
 
 }
 
