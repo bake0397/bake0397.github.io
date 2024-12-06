@@ -61,12 +61,16 @@ header {
     width: 100%;
 }
 
+.logo {
+    /* width: 100%; */
+}
+
 .logo img{
     height: 30%;
     width: 30%;
 }
 
-.logo img:hover {
+.logo:hover {
     background-color: #c78c06;
 }
 
@@ -101,6 +105,9 @@ nav a:focus {
     color: #222222;
 }
 
+label .search {
+    position: absolute;
+}
 
 .search {
     display: flex;
@@ -117,16 +124,26 @@ nav a:focus {
     margin: 0 auto;
 }
 
-#icon1 {
+button .fa-solid {
+   
+}
+
+.fa-magnifying-glass {
+    width: 10%;
+    height: 10%;
+    color: #c78c06;
+}
+
+/* #icon1 {
     display: inline-flex;
     width: 35px;
     height: 35px;
     align-content: flex-end;
-    /* margin-right: 10%; */
-    /* margin-right: 2%; */
-    /* margin-bottom: 10px; 
-    /* margin-top: 10px;  */
-}
+    margin-right: 10%;
+    margin-right: 2%;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+} */
 
 /* .search {
     display: flex; 
@@ -183,27 +200,32 @@ a {
 }
 
 .box1 {
-    background-color: #c78c06;
-    padding: 25px;
-    width: 185px;
-    margin: 0 12px;
-    display: flex;
-    position: relative;
+    /* background-color: #c78c06;
+    padding: 15px;
+    width: 40%; */
+    /* margin: 0 12px; */
+    /* display: flex; */
+    /* position: relative; */
     /* margin:  2px 270px 2px 12px; */
     /* margin-top: 2px; */
-
+}
+.fa-caret-right {
+    display: inline;
+    padding: 8px 10px;
 }
 
 .link1 {
     display: inline-block;
     color: #222222;
-    width: 80%;
+    width: 37%;
+    background-color: #c78c06;
+    padding: 15px;
 }
 
-#icon2 {
+/* #icon2 {
     align-self: flex-end;
     padding-left: 5px;
-}
+} */
 
 
 /* About Section Styles */
@@ -250,7 +272,7 @@ a {
 
 .container2 {
     background-color: white;
-    padding: 10px;
+    padding: 10px 10px;
     margin: 0 auto;
 }
 
@@ -267,126 +289,161 @@ a {
     margin-top: 10px;
     /* margin-left: 10px;
     margin-right: 10px; */
-    /* width: 100%; */
+    width: 100%;
 
 }
 
 /* Our Services Styles */
 
+#services {
+    padding: 0 10px;
+}
+
 .ser {
     font-size: 0.6rem;
     line-height: 1.3;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
     font-weight: 350;
+    margin: 10px;
 }
 
 /* Digital Plans Link Styles */
-.box2 {
+/* .box2 {
     background-color: #222222;
     padding: 20px;
-    width: 27%; 
+    width: 40%; 
     margin-left: 10px;
     margin-top: 2px; 
-}
+} */
 
 .link2 {
     display: inline-block;
     color: white;
+    width: 100%;
+    display: inline-block;
+    width: 30%;
+    background-color: #222222;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-#icon3 {
+/* #icon3 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 5px;
-}
+} */
 
 
 /* Marketing Plans Link Styles */
 
-.box3 {
+/* .box3 {
     background-color: #222222;
     padding: 20px;
     width: 32%; 
     margin-left: 10px;
     margin-top: 2px; 
-}
+} */
 
 .link3 {
     display: inline-block;
     color: white;
+    width: 100%;
+    display: inline-block;
+    width: 35%;
+    background-color: #222222;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-#icon4 {
+/* #icon4 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 5px;
-}
+} */
 
 /* Video Plans Link Styles */
-.box4 {
+/* .box4 {
     background-color: #222222;
     padding: 20px;
     width: 27%; 
     margin-left: 10px;
     margin-top: 2px; 
-}
+} */
 
 .link4 {
     display: inline-block;
     color: white;
+    width: 100%;
+    display: inline-block;
+    width: 29%;
+    background-color: #222222;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-#icon5 {
+/* #icon5 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 5px;
-}
+} */
 
 /* Web Plans Link Styles */
-.box5 {
+/* .box5 {
     background-color: #222222;
     padding: 20px;
     width: 25%; 
     margin-left: 10px;
     margin-top: 2px; 
-}
+} */
 
 .link5 {
     display: inline-block;
     color: white;
+    width: 100%;
+    display: inline-block;
+    width: 27%;
+    background-color: #222222;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-#icon6 {
+/* #icon6 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 5px;
-}
+} */
 
 /* Print Plans Link Styles */
-.box6 {
+/* .box6 {
     background-color: #222222;
     padding: 20px;
     width: 25%; 
     margin-left: 10px;
     margin-top: 2px; 
-}
+} */
 
 .link6 {
     display: inline-block;
     color: white;
+    width: 100%;
+    display: inline-block;
+    width: 27%;
+    background-color: #222222;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-#icon7 {
+/* #icon7 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 5px;
-}
+} */
 
 /* Vision Image + Link Styles */
 
@@ -416,7 +473,7 @@ a {
 
 .box7 {
     background-color: rgba(22, 32, 51, 0.8);
-    border: 1px solid #c78c06;
+    border: 1px solid rgb(199, 140, 6);
     padding: 15px;
     width: 27%; 
     margin-left: 10px;
@@ -428,12 +485,12 @@ a {
     color: white;
 }
 
-#icon8 {
+/* #icon8 {
     display: inline;
     width: 12px;
     height: 12px;
     margin-left: 10px;
-}
+} */
 
 /* Our Team Styles */
 
@@ -531,6 +588,9 @@ th {
     margin-bottom: 10px;
 }
 
+#map iframe{
+    width: 100%;
+}
 
 /* Footer Styles*/
 footer {
@@ -751,6 +811,7 @@ a .copyright3 {
         padding-bottom: 10px;
         margin-top: 10px;
     } */
+
     /* #ourteam p {
         font-size: 0.6rem;
         line-height: 1.3;
