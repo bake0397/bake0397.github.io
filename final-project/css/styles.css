@@ -111,10 +111,10 @@ nav a:focus {
 
 #searchbar {
     display: inline;
-    /* justify-self: center; */
+    justify-self: center;
     width: 85%;
     height: 35px;
-    margin-left: 3%;
+    margin: 0 auto;
 }
 
 #icon1 {
