@@ -305,6 +305,10 @@ a {
 
 /* Main Style */
 
+/* main {
+    width: 70%;
+} */
+
 /* .container {
     width: 100%;
     padding: 10rem;
@@ -1007,6 +1011,8 @@ a .copyright3 {
     /* About Section Styles */
     .container1 {
         display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #ffe6ac;
         margin-top: 0;
         height: 20rem;
@@ -1023,18 +1029,21 @@ a .copyright3 {
         display: inline;
         /* position: absolute; */
         width: 40%;
-        margin-left: 5.5rem;
-        margin-top: -1.3rem;
+        height: 100%;
+        margin-left: 6.5rem;
+        margin-top: -2rem;
+        padding-bottom: 0;
         /* justify-content: space-around; */
     }
 
     #about h2 {
         font-size: 2.5rem;
         font-weight: 670;
-        display: inline-block;
-        width: 10rem;
+        /* margin-left: 40rem; */
+        /* display: inline; */
+        width: 12rem;
         padding: 0;
-        margin: 0;
+        /* margin-top: -100rem; */
     }
 
     .container1 {
@@ -1056,14 +1065,24 @@ a .copyright3 {
         /* display: block; */
     }
     
-    #about1 p{
+    .text1 {
+        display: inline-block;
+        margin-top: -4rem;
+        margin-right: 9rem;
+    }
+
+    .text1 h2 {
+        margin-bottom: 0.6rem;
+    }
+
+    /* #about1 p{
         padding-bottom: 3rem;
         margin-top: 10rem;
         margin-left: -7.5rem;
         width: 30rem;
         display: flex;
         flex-direction: row;
-    }
+    } */
     
     /* #about2 p {
         padding-top: 1rem;
@@ -1080,7 +1099,7 @@ a .copyright3 {
     
     /* Image Styles */
     #image2 , #image3 , #image4 , #image5 , #image6 , #john , #bob {
-        width: 80%; 
+        width: 40%; 
         
     }
     
@@ -1116,53 +1135,106 @@ a .copyright3 {
    
     
     /* Our Team Styles */
-    
-    .card6 {
-        display: grid;
-        width: 80%;
-        padding: 0;
+
+    .john , .bob {
+        width: 50%;
     }
 
-    .john {
+    .card6 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -2rem
+        /* display: grid;
+        grid-template-rows: 1fr 1fr; */
+    }
+
+    .card7 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: -2rem;
+        padding-bottom: 0;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    /* .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+
+    /* .box1 {
+        grid-column-start: 2;
+        grid-column-end: -2;
+    } */
+
+    /* .card6 {
+        grid-column: ;
+        grid-row: ;
+    } */
+
+    .bob {
+        /* grid-column: 2;
+        grid-row: 1; */
+        /* grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: -2;
+        grid-row-end: -1; */
+    }
+    
+    /* .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+
+
+    /* .card6 {
+        display: flex;
+        width: 80%;
+        padding: 0;
+    } */
+
+    
+    /* .john {
         width: 100%;
         grid-column-start: 2;
         grid-column-end: 1;
         grid-row-start: 2;
         grid-row-end: 1;
-    }
+    } */
 
     /* .box1 {
         grid-column: 2;
-        grid-row: span 2;
+        grid-row: 1 / span 2;
         width: 100%;
     } */
     
-    .card7 {
+    /* .card7 {
         display: grid;
         width: 80%;
         padding: 0;
-    }
+        height: 23rem;
+    } */
 
-    .bob {
+    /* .bob {
+        grid-column: ;
         width: 100%;
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
         gap: 0;
-    }
+    } */
 
     /* .box2 {
         grid-column: 1;
-        grid-row: span 2;
+        grid-row: 1/ span 2;
         width: 100%;
     } */
 
     
-
     /* .card7 {
-        grid-column: 1;
-        grid-row: 2/ span 2 ;
+        grid-column: 2;
+        grid-row: 2/ span 2;
     } */
 
     /* .team {
@@ -1172,24 +1244,24 @@ a .copyright3 {
     } */
 
     /* .john {
-        grid-column-start: 2;
-        grid-column-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2 
         grid-row-start: 2;
         grid-row-end: 1;
+    } */
 
-    }
+    /* .card6 {
+        grid-column: 1/ span 2;
+        grid-row: 2;
+    } */
 
-    .card6 {
-        grid-column: 2;
-        grid-row: span 2;
-    }
-
-    .bob {
+    /* .bob {
         grid-column: 2;
         grid-row: 2;
-    }
+    }  */
 
-    .card7 {
+    /* .card7 {
         grid-column: 1;
         grid-row: 2/ span 2 ;
     } */
