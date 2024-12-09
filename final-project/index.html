@@ -23,21 +23,21 @@
                 <img src="./images/logo.png" alt="company logo">
             </div>
             
-            
+        <div class="navigation">
             <!-- Navigation -->
-            <nav class="navbar">
+            <nav>
                 <ul>
                     <li class="home"><a href="#home">Home</a></li>
                     <li class="about"><a href="#about">About Us</a></li>
                     <li class="services"><a href="#services">Services</a></li>
-                    <li class="services"><a href="#team">Team</a></li>
+                    <li class="team"><a href="#team">Team</a></li>
                     <li class="contact"><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="search">
-                    <label for="searchbar">search</label>
+                    <label for="searchbar" class="sr-only">search</label>
                     <!-- hidden search top: -10000 position:aboslute sr-only -->
                     <input type="search" placeholder="search" id="searchbar">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button> 
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button> 
                     
                     <!-- remove inline style -->
                     <!-- <img src="./images/iconmonstr-magnifier-6-240.png" alt="" id="icon1"> -->
@@ -46,6 +46,8 @@
             </nav>
             <!-- Navigation Closing Tag -->
 
+        </div>    
+            
             <div id="banner1">
                 <div class="overlay">
                     <div class="content">
@@ -122,17 +124,20 @@
                     <a href="#" class="link6">Print Plans<i class="fa-solid fa-caret-right"></i></a>    
                 </div>        
 
-                <div id="banner2">
-                    <div class="vision">
-                        <h3>Our Vision</h3>
-                        <p class="vcontent">Lorem ipsum dolor sit amen consectetur adipisicing elit. Ex voluptatem deleniti iure, sit accusantium rerum est comodi veniam tempora perspiciatis nobis officiis fugiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-                            <!-- <div class="box7"> -->
-                        <a href="#" class="link7">Learn More<i class="fa-solid fa-caret-right"></i></a>
-                            
-                    </div>
-                </div>
         </section>
         <!-- Our Services Closing Tag -->
+        
+        <!-- Our Vision -->
+        <section id="vision">
+            <div id="banner2">
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p class="vcontent">Lorem ipsum dolor sit amen consectetur adipisicing elit. Ex voluptatem deleniti iure, sit accusantium rerum est comodi veniam tempora perspiciatis nobis officiis fugiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
+                    <a href="#" class="link7">Learn More<i class="fa-solid fa-caret-right"></i></a>  
+                </div>
+            </div>
+        </section>
+        <!-- Our Vision Closing Tag -->
 
         <!-- Our Team Section -->
         <section id="ourteam">
@@ -165,27 +170,24 @@
 
         <!-- Contact Us Section -->
         <section id="contact">
-            <!-- Form -->
             <h2>Contact Us</h2>
-                <div class="box3">
-                    <h3>Send us a message</h3>
-                    <form action="#" method="post">
-                        <label for="name" class="name">Full Name</label>
-                        <input type="text" name="name" id="name">
+            <h3>Send us a message</h3>
+        
+            <!-- Form -->
+            <form action="#" method="post">
+                <label for="name" class="name">Full Name</label>
+                <input type="text" name="name" id="name">
 
-                        <label for="email" class="email">Email</label>
-                        <input type="email" name="email" id="email">
+                <label for="email" class="email">Email</label>
+                <input type="email" name="email" id="email">
 
-                        <label for="message" class="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
+                <label for="message" class="message">Message</label>
+                <textarea name="message" id="message"></textarea>
 
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                    
-            
+                <button type="submit">Send</button>
+            </form>
             <!-- Form Closing Tag -->
-
+                
             <!-- Hours of Operation Table -->
             <div class="box4">
                 <h3>Hours of Operation</h3>
@@ -209,21 +211,18 @@
                     </tbody>
                 </table>
             </div>
-                
             <!-- Table closing tag -->
 
             <!-- Map Location Embed -->
             <div class="box5">
                 <h3>Location</h3>
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22431.590715210015!2d-75.755369!3d45.349845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732395697810!5m2!1sen!2sca"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>    
-                
-            
-            
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22431.590715210015!2d-75.755369!3d45.349845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732395697810!5m2!1sen!2sca"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>      
         </section>
         <!-- Contact Us Closing Tag -->
+                    
     </main>
     <!-- Main closing tag -->
 
