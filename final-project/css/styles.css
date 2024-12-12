@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global/Mobile Styles */
 html{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -535,7 +535,7 @@ a .copyright3 {
         color: #c78c06;
         text-decoration: none;
         width: 8rem;
-        padding: 3rem 5;
+        padding: 3rem 0.5rem;
         flex-wrap: wrap;
         font-size: 1.3rem;
     }
@@ -701,30 +701,25 @@ a .copyright3 {
 
     .card1 {
         grid-area: 2/1/3/4;
-        flex-basis: 1;
         align-self: stretch;
     }
 
     .card2 {
         grid-area: 2/4/3/7;
-        flex-basis: 1;
         flex-grow: 2;
     }
 
     .card3 {
         grid-area: 3/1/4/3;
-        flex-basis: 1;
         align-self: stretch;
     }
 
     .card4 {
         grid-area: 3/3/4/5;
-        flex-basis: 1;
     }
 
     .card5 {
         grid-area: 3/5/4/7;
-        flex-basis: 1;
     }
 
     .ser {
@@ -853,7 +848,7 @@ a .copyright3 {
     }
 
     textarea {
-        height: 17rem;
+        height: 10rem;
         resize: none;
     }
 
@@ -887,6 +882,7 @@ a .copyright3 {
         display: block;
         background-color: #222222;
         color: #c78c06;
+        margin-top: 1rem;
     }
     
     .copyright3 {
@@ -898,22 +894,22 @@ a .copyright3 {
     a .copyright3 {
         display: inline-block;
         font-size: 0.8rem;
-        padding-top: 15px;
-        padding-bottom: 18px;
-        margin-left: 15px;
+        padding-top: 2rem;
+        padding-bottom: 1.3rem;
+        margin-left: 2rem;
     }
     
     .copyright1 {
         font-size: 0.8rem;
-        padding-top: 20px;
-        margin-left: 15px;
+        padding-top: 2rem;
+        margin-left: 7rem;
     }
     
     .copyright2 {
         font-size: 0.8rem;
-        padding-top: 15px;
+        padding-top: 1.5rem;
         padding-bottom: 18px;
-        margin-left: 15px;
+        margin-left: 7rem;
     }
     
 }
